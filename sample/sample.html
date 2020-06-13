@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Jsvascript alert</title>  
+    <link rel="stylesheet" href="../dist/custom-alert.css">  
+    <style rel="stylesheet">
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 90%;
+            margin: auto;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .mybtn{
+            border: none;
+            padding: 10px 20px;
+            background-color: pink;
+            color: #222;
+            font-weight: 600;
+            margin:5px;
+            cursor: pointer;
+        }
+        .mybtn:focus{
+            outline: none;
+            background-color: #222;
+            color: #fff;
+        }
+    </style> 
+</head>
+<body>
+
+    <div class="container">
+       <div style="margin-top: 60px;">
+        <h3>Click below to get examples</h3>
+        <button class="mybtn" id="simple">Simple Alert</button>
+        <button class="mybtn" id="alertWithOkbtn">Alert with ok button</button>
+        <button class="mybtn" id="alertWithCustomTime">Alert with custom time (1s)</button>
+        <button class="mybtn" id="confirmBtn">Confirm alert (yes/no)</button>
+
+        <h2 id="output"></h2>
+       </div>
+
+       <div style="margin-bottom: 150px;">
+        <h3>Cusotom javscript alert by <a href="https://www.worldsofashishpatel.com/" target="_blank">Ashish Patel</a></h3>
+        <p><b>Instagram :</b> <a href="https://www.instagram.com/developer.ash" target="_blank">developer.ash</a></p>
+        <p><b>Github :</b>  <a href="https://github.com/ashishkr143" target="_blank">ashishkr143</a></p>
+       </div>
+    </div>
+    
+<script type="module">
+    //import CustomAlert class from custom-alert.js;
+    import {CustomAlert} from '../dist/custom-alert.js';
+    const alr = new CustomAlert; //instanciate an onject
+    alr.alert('Welcome to custom alert !'); //start using it !!!
+
+    document.querySelector('#simple').onclick = ()=>{
+        alr.alert('This is a simple alert, with by default 3 sec of timeout !');
+    }
+   
+    document.querySelector('#alertWithOkbtn').onclick = ()=>{
+        alr.alert('Alert with ok button',true);
+    }
+
+    document.querySelector('#alertWithCustomTime').onclick = ()=>{
+        alr.alert('Alert with custom timung',true,1000);
+    }
+
+
+
+    document.querySelector('#confirmBtn').onclick = ()=>{
+
+        alr.confirm("Are you sure that you want to confirm this message ?",confirmCallback,NotConfirmCallback);
+
+    }
+
+    
+    //callback for confirm is "yes"
+    function confirmCallback(){
+            document.querySelector('#output').style.color ='green';
+            document.querySelector('#output').textContent = 'Confirmd !!';   
+    }
+     //callback for confirm is "No", ( IT IS OPTIONAL !!)
+    function NotConfirmCallback(){
+            document.querySelector('#output').style.color ='red';
+            document.querySelector('#output').textContent = 'Not confirmd !!'; 
+        }
+
+  
+
+</script>
+</body>
+</html>
