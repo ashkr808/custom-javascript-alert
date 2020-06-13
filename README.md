@@ -4,11 +4,14 @@ Get rid of your generic "confirm" and "alert" javascript function, be more UI fr
 # Instructions
 1. link "dist/custom-alert.css" css file to the document.
 2. import "CustomAlert" class from "dist/custom-alert.js".
+
     import {CustomAlert} from './dist/custom-alert.js';
+    
 3. instanciate an object with "CustomAlert" class.
 4. you ae good to go !
 
 # alert method
+
   import {CustomAlert} from './dist/custom-alert.js';
   const obj = new CustomAlert;
   obj.alert(str,boolean,time);
@@ -18,6 +21,7 @@ Get rid of your generic "confirm" and "alert" javascript function, be more UI fr
   time : (int) time in ms, for how long the alert will appear. [OPTIONAL: deafult : 3000]
 
 # confirm method
+
   import {CustomAlert} from './dist/custom-alert.js';
   const obj = new CustomAlert;
   obj.confirm(str,callback1,callback2);
@@ -33,6 +37,7 @@ Get rid of your generic "confirm" and "alert" javascript function, be more UI fr
        const obj = new CustomAlert;
        obj.alert("This is alert message !!",true,4000);
        obj.confirm("Are you sure that you want to delete ?",()=>{ console.log('deleted')} ,()=>{ console.log('not deleted')} );
+       
 
 # Make it yours
  - make chamges in "custom-alert.css" file to  edit the UI of alert box.
