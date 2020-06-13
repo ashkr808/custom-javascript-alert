@@ -11,11 +11,11 @@ Get rid of your generic "confirm" and "alert" javascript function, be more UI fr
 4. you ae good to go !
 
 # alert method
-
+```javascript
   import {CustomAlert} from './dist/custom-alert.js';
   const obj = new CustomAlert;
   obj.alert(str,boolean,time);
-  
+ ```
   str : (string) message you want to alert
   boolean :(boolean) you want 'OK' button or not in the alert [OPTIONAL : dwafult : false]
   time : (int) time in ms, for how long the alert will appear. [OPTIONAL: deafult : 3000]
