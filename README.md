@@ -16,9 +16,9 @@ Get rid of your generic "confirm" and "alert" javascript function, be more UI fr
   const obj = new CustomAlert;
   obj.alert(str,boolean,time);
  ```
-  str : (string) message you want to alert
-  boolean :(boolean) you want 'OK' button or not in the alert [OPTIONAL : dwafult : false]
-  time : (int) time in ms, for how long the alert will appear. [OPTIONAL: deafult : 3000]
+  - str : (string) message you want to alert
+  - boolean :(boolean) you want 'OK' button or not in the alert [OPTIONAL : dwafult : false]
+  - time : (int) time in ms, for how long the alert will appear. [OPTIONAL: deafult : 3000]
 
 # confirm method
 ```javascript
@@ -26,9 +26,9 @@ Get rid of your generic "confirm" and "alert" javascript function, be more UI fr
   const obj = new CustomAlert;
   obj.confirm(str,callback1,callback2);
   ```
-  str : (string) message you want to confirm
-  callback1 : this callback will be exeuted after "Yes" (confirm) action.
-  callback2 : this callback will be exeuted after "No" (not confirm) action. [OPTIONAL: deafult : return]
+  - str : (string) message you want to confirm
+  - callback1 : this callback will be exeuted after "Yes" (confirm) action.
+  - callback2 : this callback will be exeuted after "No" (not confirm) action. [OPTIONAL: deafult : return]
   
 # Example
    - check "sample/sample.html" for working example.
