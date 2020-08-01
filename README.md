@@ -2,7 +2,7 @@
 Get rid of your generic "confirm" and "alert" javascript function, be more UI friendly with your visitors.
 
 # Demo
-![](https://worldsofashishpatel.com/projects/docs/ZoomBox--An-Interactive-and-feature-rich-vanilla-JavaScript-image-viewer-plugin-for-developers/demo/custom_alert_demo.gif)
+![](https://worldsofashishpatel.com/projects/docs/ZoomBox--An-Interactive-and-feature-rich-vanilla-JavaScript-image-viewer-plugin-for-developers/demo/custom_alert_demo.gif | width=100)
 
 # Instructions
 1. link "dist/custom-alert.css" css file to the document.
