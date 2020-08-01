@@ -2,7 +2,7 @@
 Get rid of your generic "confirm" and "alert" javascript function, be more UI friendly with your visitors.
 
 # Demo
-![Farmers Market Finder Demo](https://worldsofashishpatel.com/projects/docs/ZoomBox--An-Interactive-and-feature-rich-vanilla-JavaScript-image-viewer-plugin-for-developers/demo/custom_alert_demo.gif | width=100)
+![](https://worldsofashishpatel.com/projects/docs/ZoomBox--An-Interactive-and-feature-rich-vanilla-JavaScript-image-viewer-plugin-for-developers/demo/custom_alert_demo.gif)
 
 # Instructions
 1. link "dist/custom-alert.css" css file to the document.
